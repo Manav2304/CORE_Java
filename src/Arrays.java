@@ -16,7 +16,8 @@ public class Arrays {
 //        }
 //        ForEnhanced.show();
 //        length.LENGTH();
-        RandomValues.RandomClass();
+//        RandomValues.RandomClass();
+        Arraytwodimenstional.Arraytwodimentional();
     }
 }
 //this is the example in which I have created one more class for the enhanced for loop
@@ -53,13 +54,41 @@ class length{
 class RandomValues{
     public static void RandomClass(){
         Random r = new Random();
-        int[] a = new int[20];
+        int[] a = new int[10];
+
         for (int i = 0 ; i < a.length; i++){
             a[i] = r.nextInt(50);
 
         }
+        try {
+            System.out.println(a[52]);
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Maximun index is 49");
+        }
         for(int i : a){
             System.out.println(i);
         }
+    }
+}
+
+class Arraytwodimenstional{
+    public static void Arraytwodimentional(){
+        int a=5,b=6,c=7,d=8;
+        int x[] = {5,6,7,8};
+        int y[] = {6,7,8,9};
+        int z[] = {9,8,7,6};
+        int p[][] = {
+                {5,6,7,8},
+                {6,7,8,9},
+                {9,8,7,6}
+        };
+        for (int i= 0; i<3;i++){
+            for(int j=0; j<4; j++){
+                System.out.print(p[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+
     }
 }
