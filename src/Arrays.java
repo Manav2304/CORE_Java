@@ -19,8 +19,15 @@ public class Arrays {
 //        RandomValues.RandomClass();
 //        Arraytwodimenstional.Arraytwodimentional();
 //        EnhancedForLoop.EnhancedFor();
-        JaggedArray.Jaggedarray();
+//        JaggedArray.Jaggedarray();
+//        multiArray.mutliDimentionalArray();
+
+        Display obj = new Display();
+        obj.show(5);
+
     }
+
+
 }
 //this is the example in which I have created one more class for the enhanced for loop
 class ForEnhanced{
@@ -136,5 +143,44 @@ class JaggedArray{
         }
         System.out.println();
     }
+    }
+}
+class multiArray{
+    public static void mutliDimentionalArray(){
+        int[][][] a= new int [1][2][3];
+        for (int i =0; i<1; i++){
+             for(int j=0; j<2; j++){
+                for(int k=0; k<3;k++){
+                    a [i][j][k]  = i+j+k;
+                }
+             }
+        }
+//        for (int i =0; i<1; i++){
+//            for(int j=0; j<2; j++){
+//                for(int k=0; k<3;k++){
+//                    System.out.print(" "+a[i][j][k]);
+//                }
+//            }
+//        }
+        for(int i[][] :a) {
+            for(int j[]:i){
+                for(int k:j){
+                    System.out.print(" " + k);
+                }
+            }
+        }
+
+    }
+}
+
+
+class Display{
+    public void show(int ... a ){
+        for(int i : a) {
+            System.out.println(i);
+        }
+    }
+    public void show(int a ){
+        System.out.println(a + "in show a ");
     }
 }
