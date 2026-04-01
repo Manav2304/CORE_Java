@@ -6,14 +6,18 @@ public class oops {
     }
 }
 
-//below exaample state that constructor overloading
+//below example state that constructor overloading
 class Abc{
     public Abc()
     {
         System.out.println(" In Abc constructor");
     }
     public Abc(int a ){
-        System.out.println(" In Abc constructor with parameter ");
+        System.out.println(" In Abc constructor with int ");
+
+    }
+    public Abc(double a ){
+        System.out.println(" In Abc constructor with double ");
 
     }
 }
