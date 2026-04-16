@@ -1,23 +1,37 @@
 public class oops {
-    static public void main(String ... args){
-        Abc obj = new Abc(5);
+    public static void main(String [] args){
+        Emp e1 = new Emp();
+        Emp e2 = new Emp();
 
+
+
+        e1.setEmpId(3);
+        e1.setEmpName("Manav");
+        e2.setEmpName("patel");
+        e2.setEmpId(1);
+        System.out.println(e1.getEmpName()+" "+ e2.getEmpName());
+        System.out.println(e1.getEmpId()+" " +  e2.getEmpId());
 
     }
 }
 
-//below example state that constructor overloading
-class Abc{
-    public Abc()
-    {
-        System.out.println(" In Abc constructor");
-    }
-    public Abc(int a ){
-        System.out.println(" In Abc constructor with int ");
+class Emp{
+   private int empId;
+    private String empName;
 
+    public int getEmpId() {
+        return empId;
     }
-    public Abc(double a ){
-        System.out.println(" In Abc constructor with double ");
 
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
     }
 }
