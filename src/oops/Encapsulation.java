@@ -1,4 +1,6 @@
-public class oops {
+package oops;
+
+public class Encapsulation {
     public static void main(String [] args){
         Emp e1 = new Emp();
         Emp e2 = new Emp();
